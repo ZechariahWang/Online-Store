@@ -99,7 +99,7 @@ const ProductCard = ({ product }) => {
         <HStack spacing={2}>
           <IconButton
             icon={<EditIcon />}
-            onClick={onOpen} // Open the modal
+            onClick={onOpen} 
             colorScheme='blue'
           />
           <IconButton
