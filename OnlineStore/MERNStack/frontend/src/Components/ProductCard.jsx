@@ -27,7 +27,7 @@ const ProductCard = ({ product }) => {
   const [updatedProduct, setUpdatedProduct] = useState(product);
 
   const textColor = useColorModeValue("gray.600", "gray.200");
-  const bg = useColorModeValue("white", "gray.800");
+  const bg = useColorModeValue("white", "grey.200");
 
   const { deleteProduct, updateProduct } = useProductStore();
   const toast = useToast();
@@ -99,7 +99,7 @@ const ProductCard = ({ product }) => {
         <HStack spacing={2}>
           <IconButton
             icon={<EditIcon />}
-            onClick={onOpen} 
+            onClick={onOpen} // Open the modal
             colorScheme='blue'
           />
           <IconButton
